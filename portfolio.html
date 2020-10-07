@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="portfolio.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
 </head>
 <body>
-    
+    <header>
+        <img src="images/EMANCIPATOR.png" alt="logo" class="logo">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="portfolio.html">HOME</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main">
+        <h1 id="title">Embedded Systems and Junior Software Engineer</h1>
+        <p id="description">Thank you for taking the time to know me!</p>
+        <div id="container">
+            <img src="images/laptopScreen.jpg" alt="bg-display">
+            <p></p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <ul class="foot-list">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="foot-signup">
+                <label class="signup-label">Sign up for our News Letter:</label><br>
+                <div class="email-div">
+                    <span id="newsError"></span>
+                    <input type="text" name="newsletter" placeholder="enter your email address" class="newsletter-input" id="newsEmail">
+                    <button class="submit-btn" id="newsBtn">ENTER</button>
+                </div>
+            </div>
+            <div class="conn-div">
+                <p class="conn">CONNECT WITH US:</p>
+                <a href="#"><img src="images/facebook-logo.png" alt="facebook-logo" class="conn-logo"></a>
+                <a href="#"><img src="images/gmail-logo.png" alt="gmail-logo" class="conn-logo"></a>
+                <a href="#"><img src="images/instagram-logo.webp" alt="instagram-logo" class="conn-logo"></a>
+                <a href="#"><img src="images/twitter-logo.jpg" alt="twitter-logo" class="conn-logo"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
