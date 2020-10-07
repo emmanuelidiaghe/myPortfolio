@@ -1,4 +1,4 @@
-header, .footer {
+header, footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -16,7 +16,7 @@ header, .footer {
     overflow: hidden;
 }
 #title {
-    margin-top: 40px;
+    margin: 40px 20px;
     /*text-align: center;*/
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
@@ -25,6 +25,7 @@ header, .footer {
 }
 #description {
     /*text-align: center;*/
+    margin: 20px 40px;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
@@ -36,7 +37,7 @@ header, .footer {
     position: relative;
     overflow: hidden;
     display: block;
-    width: 300px;
+    width: 800px;
     height: 667px;
     margin: 10px auto 10px auto;
     background-color: #451e3e;
@@ -56,16 +57,6 @@ header, .footer {
     height: auto;
     opacity: 0.1;
 }
-@media screen and (min-width: 700px) {
-    #container {
-        width: 600px;
-    }
-  }
-@media screen and (min-width: 1000px) {
-    #container {
-        width: 850px;
-    }
-  }
 label{
     font-family: 'Poppins', sans-serif;
     font-size: inherit;
@@ -80,22 +71,7 @@ label{
     border-radius: 0.25rem;
     padding: 0 10px;
 }
-.checkbox-span {
-    font-size: 80%;
-}
-.input-radio, .input-checkbox {
-    min-height: 1.1rem;
-    min-width: 1.1rem;
-}
-.checkbox-font, .radio-font {
-    font-family: 'Poppins';
-    display: inline-block;
-}
-h4 {
-    font-weight: normal;
-    font-size: 1.2rem;
-    color: rgb(194, 173, 173);
-}
+
 #submit-button {
     min-width: auto;
     min-height: auto;
@@ -129,96 +105,8 @@ h4 {
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 
-@media screen and (min-width: 900px) {
-    .content {
-            display: flex;
-            width: 100%;
-            margin: 0 auto;
-        }
-    .left-div, .right-div {
-        float: left;
-        width: 50%;
-        margin: auto;
-        padding: 10px 80px;
-        align-items: center;
-    }
-    header, .footer {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        background-color: rgba(69, 30, 62, 0.85);
-        padding: 0 10px;
-    }
-    .nav-list li {
-        display: inline-block;
-        padding: 10px;
-        margin: 0 5px;
-    }
-    }
-
-@media screen and (min-width: 451px) and (max-width: 900px) {
-    .content {
-            display: inline-block;
-            width: 100%;
-            margin: auto;
-            align-items: center;
-        }
-    .left-div, .right-div {
-        margin: 15px auto;
-        padding: 0 70px;
-        align-items: center;
-    }
-    header, .footer {
-        display: flex;
-        justify-content: flex-end;
-        background-color: rgba(69, 30, 62, 0.85);
-        align-items: center;
-        padding: 0 10px;
-    }
-    .nav-list li {
-        display: inline-block;
-        padding: 10px;
-        margin: 0 5px;
-    }
-    }
-
-    @media screen and (max-width: 450px) {
-    .content {
-            display: inline-block;
-            width: 100%;
-            padding: 0 30px;
-            margin: 10px auto;
-            align-items: center;
-        }
-    .left-div, .right-div {
-        margin: 15px auto;
-        padding: 0;
-        align-items: center;
-    }
-    .left-div {
-        text-align: center;
-    }
-    .nav-list li {
-        display: block;
-        padding: 10px;
-        margin: 0 5px;
-    }
-    header, .footer {
-        display: block;
-        background-color: rgba(69, 30, 62, 0.85);
-        margin: 5px 0;
-        padding: 0 10px;
-    }
-    .foot-list {
-        margin-bottom: 15px;
-    }
-    .conn {
-        margin-top: 15px;
-    }
-    }
-    
 * {
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     padding: 0;
     margin: 0;
@@ -230,26 +118,6 @@ h4 {
     height: 50px;
     cursor: pointer;
     margin-right: auto;
-}
-
-.left-div {
-    text-align: center;
-}
-
-.call-icon {
-    width: 30px;
-    height: 20px;
-    margin: auto;
-}
-
-.message-icon {
-    width: 50px;
-    height: 40px;
-    margin-top: 10px;
-}
-
-.field-icon {
-    text-align: center;
 }
 
 .nav-list {
@@ -284,24 +152,6 @@ li, a {
     margin-right: auto;
 }
 
-.copyright {
-    text-align: center;
-    margin-top: 10px;
-    background-color: rgba(69, 30, 62, 0.85);
-}
-fieldset {
-    border-radius: 20px;
-    padding: 21px;
-    line-height: 30px;
-}
-.right-div label {
-    line-height: 30px;
-    margin-top: 200px;
-}
-textarea {
-    width: 100%;
-    height: auto;
-}
 input {
     width: 100%;
     height: 30px;
@@ -337,20 +187,4 @@ input {
 }
 .conn-div {
     display: inline-block;
-}
-footer {
-    background-color: rgba(69, 30, 62, 0.85);
-}
-.left-div a {
-    color: rosybrown;
-    margin: 0 auto;
-    text-decoration: underline;
-}
-.errorSpan {
-    color: red;
-    font-size: 12px;
-}
-#newsError {
-    color: white;
-    font-size: 12px;
 }
