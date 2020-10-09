@@ -24,6 +24,11 @@ header, footer {
     overflow: hidden;
 }
 #title {
+	border-bottom: 4px solid #451e3ed9;
+	border-right: 4px solid #451e3ed9;
+	transition: all 0.4s;
+    box-shadow: 4px 4px #451e3ed9;
+    
     margin: 40px 190px;
     color: #f5deb3;
     font-family: 'Poppins', sans-serif;
@@ -166,7 +171,7 @@ padding: 16px 32px;
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
       typing 3.5s steps(30, end),
-      blink-caret 1s step-end infinite;
+      blink-caret 3s step-end infinite;
   }
   @keyframes typing {
     from { width: 0 }
@@ -176,6 +181,29 @@ padding: 16px 32px;
     from, to { border-color: transparent }
     50% { border-color: #f5deb3 }
   }
+
+
+
+
+
+.web{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.web img {
+	width: 300px;
+	height: 225px;
+	margin: 5px;
+	transition: all 0.5s;
+}
+.web img:hover{
+	transform: scale(1.1);
+}
+
+
+
+
 
 
 
