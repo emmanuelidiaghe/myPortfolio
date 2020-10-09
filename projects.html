@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="portfolio.css" rel="stylesheet">
+   
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
 </head>
 <body>
-    
+    <header>
+        <img src="images/EMANCIPATOR.png" alt="logo" class="logo">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="portfolio.html">HOME</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main">
+        <h1 id="title">Projects</h1>
+        <p id="description"></p>
+        <div class="container">
+            <img id="uppercontainer" src="images/laptopScreen.jpg" alt="bg-display">
+            <div id="overview">
+                <h4>OVERVIEW</h4><br>
+                <ul>
+                    <li>WEB DEVELOPMENT:</li>
+                    <p>I started my journey into web development in 2019. As a software engineer, I have worked independently
+                        and with teams using HTML, CSS, UI/UX (Figma, Balsamiq), JAVASCRIPT (Vanilla js, DOM & React), PHP, SLIM,
+                        MYSQL, and APACHE SERVER. I have also designed several projects using these development tools and languages.
+                        See my <a href="projects.html">projects here.</a>
+                    </p><br>
+                    <li>EMBEDDED SYSTEMS:</li>
+                    <p>In 2017, my journey into the tech space began and since then, I have been doing a lot of 
+                        embedded systems design. Some persons have asked me how I manage to combine embedded systems and web development;
+                        well, I think multitasking should be one of a software engineer's abilities. There is a relationship between embedded
+                        systems and web development, especially in the field of Internet of Things; this makes the combination worthwhile. You
+                        could check out some of my embedded systems <a href="projects.html">projects here.</a>
+                    </p>
+                </ul><br>
+            </div>
+        </div>
+        <div class="container">
+            <h4>QUICK LINKS</h4>
+            <div class="linkDiv">
+                <div class="lowDiv">
+                    <img src="images/webDev.jpeg" alt="webDev display" class="image" style="width:100%">
+                    <a class="text middle" href="projects.html">Web Development</a>
+                </div>
+                <div class="lowDiv">
+                    <img src="images/embeddedSystems.png"alt="embeddedSystems display" class="image">
+                    <a class="text middle" href="projects.html">Embedded Systems</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+            <ul class="foot-list">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="foot-signup">
+                <p class="conn">&copy;2020. All Rights Reserved</p>
+                <p class="conn" style="text-align: center;">Emmanuel Idiaghe</p>
+            </div>
+            <div class="conn-div">
+                <p class="conn">Let's socialize:</p>
+                <a href="#"><img src="images/facebook-logo.png" alt="facebook-logo" class="conn-logo"></a>
+                <a href="#"><img src="images/whatsapp-icon.png" alt="gmail-logo" class="conn-logo"></a>
+                <a href="#"><img src="images/instagram-logo.webp" alt="instagram-logo" class="conn-logo"></a>
+                <a href="#"><img src="images/twitter-logo.png" alt="twitter-logo" class="conn-logo"></a>
+            </div>
+    </footer>
 </body>
 </html>
