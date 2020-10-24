@@ -4,8 +4,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-
 header, footer {
     display: flex;
     justify-content: flex-end;
@@ -24,25 +22,27 @@ header, footer {
     overflow: hidden;
 }
 #title {
+    margin-top: 10px;
 	border-bottom: 4px solid #451e3ed9;
 	border-right: 4px solid #451e3ed9;
 	transition: all 0.4s;
     box-shadow: 4px 4px #451e3ed9;
-    
-    margin: 40px 190px;
+    width: 90%;
     color: #f5deb3;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-size: 3vw;
     line-height: 1.4;
     text-transform: uppercase;
 }
-#description {
-    margin: 20px 40px;
+.description {
     color: hsl(0, 0%, 88%);
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 17px;
-    padding: 0 150px;
+}
+.description2 {
+    margin: auto;
+    width: 60%;
 }
 #overview ul {
     color: hsl(0, 0%, 88%);
@@ -51,7 +51,6 @@ header, footer {
     position: relative;
     overflow: hidden;
     display: block;
-    width: 800px;
     margin: 10px auto 10px auto;
     background-color: #451e3e;
     padding: 10px 20px;
@@ -117,12 +116,12 @@ h4 {
     text-decoration: underline;
 }
 
-.linkDiv {
+.linkDiv, .topDiv {
     display: flex;
     align-items: center;
     margin: auto;
 }
-.lowDiv {
+.lowDiv, .leftDiv, .rightDiv {
 position: relative;
 width: 50%;
 margin: 20px;
@@ -296,3 +295,87 @@ input {
 .conn {
     color: #ffffff;
 }
+
+
+
+.profilePic {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.topDiv {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.leftDiv {
+    width: 30%;
+}
+.rightDiv {
+    text-align: left;
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+.topDiv {
+        display: block;
+        align-items: center;
+        margin: auto;
+}
+.leftDiv {
+    margin: auto;
+    width: 50%;
+}
+.rightDiv {
+    margin: 10px;
+    text-align: left;
+    width: 95%;
+}
+.container {
+    width: 80%;
+}
+  }
+@media screen and (min-width: 401px) and (max-width: 700px) {
+    .container {
+        width: 80%;
+    }
+    .calDiv {
+        display: flex;
+    }
+  }
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+    .container {
+        width: 70%;
+    }
+    .calDiv {
+        display: flex;
+    }
+  }
+@media screen and (min-width: 1001px) {
+    .container {
+        width: 60%;
+    }
+  }
+
+  
