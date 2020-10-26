@@ -11,7 +11,11 @@ header, footer {
     background-color: #451e3ed9;
     padding: 0 10px;
 }
-
+.nav-list li {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 5px;
+}
 #main{
     position: relative;
     background-image: linear-gradient(220deg, #451e3ed9, #651e3e);
@@ -284,10 +288,7 @@ input {
     height: 30px;
     margin: 5px;
 }
-.conn-div {
-    text-align: center;
-    display: inline-block;
-}
+
 .conn {
     color: #ffffff;
 }
@@ -333,8 +334,6 @@ input {
 
 
 
-
-
 @media screen and (max-width: 400px) {
 header, footer {
     display: block;
@@ -342,9 +341,18 @@ header, footer {
     padding: 0 10px;
     background-color: #451e3ed9;
 }
+footer {
+    display: table;
+    width: 100%;
+}
 .nav-list li {
     display: block;
     padding: 10px;
+}
+.foot-signup {
+    text-align: center;
+    margin: auto;
+    display: table-footer-group;
 }
 .topDiv {
     display: block;
