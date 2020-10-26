@@ -317,7 +317,9 @@ input {
     text-align: left;
     width: 50%;
 }
-
+.progress {
+    display: block;
+}
 
 
 
