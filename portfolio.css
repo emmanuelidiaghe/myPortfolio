@@ -116,6 +116,9 @@ h4 {
 #overview p a {
     text-decoration: underline;
 }
+#overview li {
+    color: #f5deb3;
+}
 
 .linkDiv, .topDiv {
     display: flex;
@@ -373,6 +376,9 @@ header, footer {
 .topnav2 {
     display: none;
 }
+.description2 {
+    width: 90%;
+}
 footer {
     display: table;
     width: 100%;
@@ -400,7 +406,7 @@ footer {
     width: 95%;
 }
 .container {
-    width: 80%;
+    width: 90%;
 }
   }
 @media screen and (min-width: 601px) and (max-width: 1000px) {
