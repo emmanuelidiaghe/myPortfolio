@@ -5,11 +5,12 @@
     box-sizing: border-box;
 }
 header, footer {
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     background-color: #451e3ed9;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 .nav-list li {
     display: inline-block;
@@ -201,7 +202,37 @@ padding: 16px 32px;
 }
 
 
-
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #451e3ed9;
+  position: relative;
+}
+.topnav #myLinks {
+  display: none;
+}
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.topnav a.icon {
+  background: #451e3ed9;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav a:hover {
+  background-color: #642a5ad9;
+  color: black;
+}
+.active {
+  background-color: #451e3ed9;
+  color: white;
+}
 
 
 
@@ -334,12 +365,13 @@ input {
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 header, footer {
+    width: 100%;
     display: block;
-    margin: 5px 0;
-    padding: 0 10px;
-    background-color: #451e3ed9;
+}
+.topnav2 {
+    display: none;
 }
 footer {
     display: table;
@@ -347,7 +379,6 @@ footer {
 }
 .nav-list li {
     display: block;
-    padding: 10px;
 }
 .foot-signup {
     text-align: center;
@@ -372,7 +403,15 @@ footer {
     width: 80%;
 }
   }
-@media screen and (min-width: 401px) and (max-width: 700px) {
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+    .topnav2 {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .topnav {
+        display: none;
+    }
     .container {
         width: 80%;
     }
@@ -380,18 +419,16 @@ footer {
         display: flex;
     }
   }
-@media screen and (min-width: 701px) and (max-width: 1000px) {
-    .container {
-        width: 70%;
-    }
-    .calDiv {
-        display: flex;
-    }
-  }
 @media screen and (min-width: 1001px) {
+    .topnav2 {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .topnav {
+        display: none;
+    }
     .container {
         width: 60%;
     }
   }
-
-  
