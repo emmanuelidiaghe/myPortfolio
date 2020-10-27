@@ -3,21 +3,36 @@
 <head>
     <link href="portfolio.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
 </head>
 <body>
     <header>
-        <img src="images/EMANCIPATOR.png" alt="logo" class="logo">
-        <nav>
-            <ul class="nav-list">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT ME</a></li>
-                <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
+        <div class="topnav">
+            <a href="index.html" class="active"><img src="images/EMANCIPATOR.png" alt="logo" class="logo"></a>
+            <div id="myLinks">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT ME</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="topnav2">
+            <img src="images/EMANCIPATOR.png" alt="logo" class="logo">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>   
     </header>
     <div id="main">
         <h1 class="typewriter" id="title">Embedded Systems and Software Engineer</h1><br>
@@ -63,10 +78,9 @@
     </div>
     <footer>
             <ul class="foot-list">
-                <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT ME</a></li>
                 <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="contact.html">CONTACT</a></li><hr>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
             <div class="foot-signup">
                 <p class="conn">&copy;2020. All Rights Reserved</p>
@@ -80,5 +94,6 @@
                 <a href="#"><img src="images/twitter-logo.png" alt="twitter-logo" class="conn-logo"></a>
             </div><hr>
     </footer>
+    <script src="portfolio.js"></script>
 </body>
 </html>
