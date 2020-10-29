@@ -351,8 +351,13 @@ input {
 .progress {
     display: block;
 }
-
-
+.solderingVideo, iframe {
+    width: 70%;
+    height: 300px;
+    display: block;
+    border-style:none;
+    margin: 10px auto;
+}
 
 
 
