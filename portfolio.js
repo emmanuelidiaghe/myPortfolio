@@ -6,3 +6,7 @@ function myFunction() {
       x.style.display = "block";
     }
   }
+
+function comingSoon() {
+  alert("This project is not available at the moment; please check back!");
+}
