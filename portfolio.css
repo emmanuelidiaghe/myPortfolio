@@ -1,9 +1,70 @@
+/*******************************************************
+             Styles common to all pages
+*******************************************************/
 * {
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+/***Navigation Menu***/
+.topnav {
+    overflow: hidden;
+    background-color: #451e3ed9;
+    position: relative;
+  }
+  .topnav #myLinks {
+    display: none;
+  }
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  .topnav a.icon {
+    background: #451e3ed9;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav a:hover {
+    background-color: #642a5ad9;
+    color: black;
+  }
+  .active {
+    background-color: #451e3ed9;
+    color: white;
+  }
+.logo {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    margin-right: auto;
+}
+.nav-list {
+    list-style: none;
+}
+.nav-list li a, .foot-list li a{
+    transition: all 0.3s ease 0s;
+}
+.nav-list li a:hover, .foot-list li a:hover{
+    color: rosybrown;
+}
+
+li, a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+.foot-list {
+    margin-right: auto;
+    list-style: none;
+    line-height: 40px;
+}
+/*********************************/
 header, footer {
     width: 100%;
     display: flex;
@@ -75,7 +136,6 @@ header, footer {
     display: block;
     transition: .5s ease;
     backface-visibility: hidden;
-
     align-items: center;
     width: 300px;
     height: 225px;
@@ -95,21 +155,6 @@ label{
     border-radius: 0.25rem;
     padding: 0 10px;
 }
-
-#submit-button {
-    min-width: auto;
-    min-height: auto;
-    position: relative;
-}
-#submit {
-    border-radius: 10%;
-    background-color: #ffffff;
-    display: block;
-    min-width: 10%;
-    min-height: auto;
-    padding: 5px;
-    margin: auto;
-}
 h4 {
     color: #f5deb3;
 }
@@ -119,18 +164,76 @@ h4 {
 #overview li {
     color: #f5deb3;
 }
-
 .linkDiv, .topDiv {
     display: flex;
     align-items: center;
     margin: auto;
 }
 .lowDiv, .leftDiv, .rightDiv {
-position: relative;
-width: 50%;
-margin: 20px;
+    position: relative;
+    width: 50%;
+    margin: 20px;
+}
+.leftDiv {
+    width: 30%;
+}
+.rightDiv {
+    text-align: left;
+    width: 50%;
+}
+.foot-signup {
+    margin-right: auto;
+}
+.conn-logo {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+.conn {
+    color: #ffffff;
 }
 
+/*********************************************
+            Home Page Styles
+**********************************************/
+/***********Progress Bars**********************/
+.profilePic {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+progress {
+	width: 50%;
+	height: 14px;
+	display: block;
+	-webkit-appearance: none;
+	border: none;
+}
+progress::-webkit-progress-bar {
+	background: #451e3ed9;
+	border-radius: 50px;
+	padding: 2px;
+	box-shadow: 0 1px 0px 0 #451e3ed9;
+}
+progress::-webkit-progress-value {
+	border-radius: 50px;
+	box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+	background:
+		-webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
+		-webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+		-webkit-linear-gradient(left, #920a79d9, #fc02d2d9);
+	background-size: 25px 14px, 100% 100%, 100% 100%;
+	animation: move 5s linear 0 infinite;
+}
+@keyframes move {
+	0% {background-position: 0px 0px, 0 0, 0 0}
+	100% {background-position: -100px 0px, 0 0, 0 0}
+}
+.progressDiv label {
+    color: #ffffff;
+}
+/*******************************/
 .image {
 opacity: 1;
 display: block;
@@ -139,7 +242,6 @@ height: auto;
 transition: .5s ease;
 backface-visibility: hidden;
 }
-
 .middle {
 transition: .5s ease;
 opacity: 0;
@@ -150,22 +252,18 @@ transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
 text-align: center;
 }
-
 .lowDiv:hover .image {
 opacity: 0.3;
 }
-
 .lowDiv:hover .middle {
 opacity: 1;
 }
-
 .text {
 background-color: #651e3e;
 color: white;
 font-size: 16px;
 padding: 16px 32px;
 }
-
 .typewriter {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid #f5deb3; /* The typwriter cursor */
@@ -189,6 +287,41 @@ padding: 16px 32px;
 
 
 
+.progress {
+    display: block;
+}
+.solderingVideo, iframe {
+    width: 70%;
+    height: 300px;
+    display: block;
+    border-style:none;
+    margin: 10px auto;
+}
+
+
+
+
+/**********************************************
+            About Page
+**********************************************/
+.resourcesList li{
+    width: auto;
+    text-decoration: underline;
+    font-style: italic;
+    margin-left: 20px;
+}
+.resourcesList a {
+    color: hsl(0, 0%, 88%);
+}
+
+
+
+/**********************************************
+                Projects Page
+*********************************************/
+.subMain {
+    margin: 20px;
+}
 .web{
 	display: flex;
 	flex-wrap: wrap;
@@ -204,100 +337,58 @@ padding: 16px 32px;
 	transform: scale(1.1);
 }
 
-
-/* Style the navigation menu */
-.topnav {
-  overflow: hidden;
-  background-color: #451e3ed9;
-  position: relative;
-}
-.topnav #myLinks {
-  display: none;
-}
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-.topnav a.icon {
-  background: #451e3ed9;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.topnav a:hover {
-  background-color: #642a5ad9;
-  color: black;
-}
-.active {
-  background-color: #451e3ed9;
-  color: white;
+/*******************************************
+                Contact Page
+******************************************/
+.reachMe, .group label, .rightDiv label {
+    color: #ffffff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.logo {
-    width: 100px;
-    height: 50px;
-    cursor: pointer;
-    margin-right: auto;
+.leftDiv .control {
+    display: block;
+    width: 10%;
+    border: 2px;
+    border-radius: 0.25rem;
+    padding: 0 10px;
+    background-color: #451e3ed9;
 }
-
-.nav-list {
-    list-style: none;
+h4 {
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: rgb(194, 173, 173);
 }
-
-.nav-list li a, .foot-list li a{
-    transition: all 0.3s ease 0s;
+#submit-button {
+    min-width: auto;
+    min-height: auto;
+    position: relative;
 }
-
-.nav-list li a:hover, .foot-list li a:hover{
-    color: rosybrown;
+#submit {
+    border-radius: 10%;
+    background-color: #ffffff;
+    display: block;
+    min-width: 10%;
+    min-height: auto;
+    padding: 5px;
+    margin: auto;
 }
-
-li, a {
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
+.rightDiv .conn-logo {
+    width: 10%;
+    height: 10%;
+    margin: 20px;
 }
-
-.foot-list {
-    margin-right: auto;
-    list-style: none;
-    line-height: 40px;
-}
-
-.email-div {
-    display: flex;
-    margin: 0 5px;
-}
-
-.foot-signup {
-    margin-right: auto;
-}
-
-input {
-    width: 100%;
-    height: 30px;
+.leftDiv input, textarea {
+    color: #ffffff;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: groove;
 }
-
+::placeholder {
+    color: rgb(182, 174, 174);
+}
+.leftDiv select, .leftDiv option {
+    color: #ffffff;
+}
 .submit-btn {
     display: block;
     border-radius: 5%;
@@ -307,72 +398,29 @@ input {
     color: white;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    background-color: rosybrown;
+    background-color: #451e3ed9;
 }
-
 .submit-btn:hover {
     color: black;
 }
-.newsletter-input {
-    margin-right: 10px;
-}
-
-.conn-logo {
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-}
-
-.conn {
-    color: #ffffff;
-}
-
-
-
-.profilePic {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    
-}
-
-.topDiv {
-    display: flex;
-    align-items: center;
-    margin: auto;
-}
-.leftDiv {
-    width: 30%;
-}
-.rightDiv {
-    text-align: left;
+.contactDiv .leftDiv, .contactDiv .rightDiv {
     width: 50%;
 }
-.progress {
-    display: block;
+.leftDiv textarea {
+    width: 100%;
+    background-color: #451e3ed9;
 }
-.solderingVideo, iframe {
-    width: 70%;
-    height: 300px;
-    display: block;
-    border-style:none;
-    margin: 10px auto;
+.rightDiv a {
+    text-decoration: underline;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+/***********************************************
+                Media Queries
+*********************************************/
+/***Mobile***/
 @media screen and (max-width: 600px) {
 header, footer {
     width: 100%;
@@ -413,7 +461,17 @@ footer {
 .container {
     width: 90%;
 }
+.contactDiv .leftDiv, .contactDiv .rightDiv {
+    width: 90%;
+}
+.leftDiv .description2 {
+    width: 100%;
+}
+.reachMe {
+    text-align: center;
+}
   }
+  /***Tablet***/
 @media screen and (min-width: 601px) and (max-width: 1000px) {
     .topnav2 {
         width: 100%;
@@ -430,6 +488,7 @@ footer {
         display: flex;
     }
   }
+  /***PC/Desktop***/
 @media screen and (min-width: 1001px) {
     .topnav2 {
         width: 100%;
@@ -443,3 +502,6 @@ footer {
         width: 60%;
     }
   }
+  /***********************************************************************************************************
+******************************                  END                 ******************************************
+  ***********************************************************************************************************/
