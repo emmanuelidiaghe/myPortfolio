@@ -290,13 +290,7 @@ padding: 16px 32px;
 .progress {
     display: block;
 }
-.solderingVideo, iframe {
-    width: 70%;
-    height: 300px;
-    display: block;
-    border-style:none;
-    margin: 10px auto;
-}
+
 
 
 
@@ -313,7 +307,13 @@ padding: 16px 32px;
 .resourcesList a {
     color: hsl(0, 0%, 88%);
 }
-
+.solderingVideo, iframe {
+    width: 70%;
+    height: 300px;
+    display: block;
+    border-style:none;
+    margin: 10px auto;
+}
 
 
 /**********************************************
@@ -336,7 +336,9 @@ padding: 16px 32px;
 .web img:hover{
 	transform: scale(1.1);
 }
-
+.media {
+    display: flex;
+}
 /*******************************************
                 Contact Page
 ******************************************/
@@ -469,6 +471,13 @@ footer {
 }
 .reachMe {
     text-align: center;
+}
+iframe {
+    width: 90%;
+    height: 67.5%;
+}
+.solderingVideo {
+    height: auto;
 }
   }
   /***Tablet***/
